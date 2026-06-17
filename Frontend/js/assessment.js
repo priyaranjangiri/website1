@@ -135,7 +135,7 @@ function addBotMessage(text){
     msg.innerHTML = `
         <div class="avatar">
             <img
-                src="assets/logo.svg"
+                src="assets/logo.jpeg"
                 alt="LearnHub"
             >
         </div>
