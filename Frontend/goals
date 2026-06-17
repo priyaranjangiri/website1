@@ -1,0 +1,43 @@
+Login
+ ↓
+Dashboard
+ ↓
+Assessment Chatbot
+ ↓
+Collect Answers
+ ↓
+Store User Profile
+ ↓
+Send To Backend
+ ↓
+Receive Recommendations
+ ↓
+Display Learning Path
+
+LearnHub/
+│
+├── frontend/
+│   ├── index.html          ← Login page
+│   ├── dashboard.html      ← Dashboard
+│   ├── assessment.html     ← Chatbot quiz
+│   │
+│   ├── css/
+│   │   └── style.css
+│   │
+│   ├── js/
+│   │   ├── login.js
+│   │   ├── dashboard.js
+│   │   ├── assessment.js
+│   │   └── api.js
+│   │
+│   └── assets/
+│       ├── logo.png
+│       └── images/
+│
+├── backend/
+│   ├── app.py
+│   ├── model.pkl
+│   ├── database.db
+│   └── requirements.txt
+│
+└── README.md

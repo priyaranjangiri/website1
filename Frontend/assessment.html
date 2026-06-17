@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>LearnHub Assessment</title>
+
+    <link rel="stylesheet" href="assessment.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            Learn<span>Hub</span>
+        </div>
+
+        <div class="timeline">
+
+            <div class="tl-item active">
+                <div class="tl-dot">1</div>
+
+                <div class="tl-label">
+                    Knowledge
+                    <small>Skill assessment</small>
+                </div>
+            </div>
+
+            <div class="tl-item">
+                <div class="tl-dot">2</div>
+
+                <div class="tl-label">
+                    Learning Pace
+                    <small>Study habits</small>
+                </div>
+            </div>
+
+            <div class="tl-item">
+                <div class="tl-dot">3</div>
+
+                <div class="tl-label">
+                    Preferences
+                    <small>Learning style</small>
+                </div>
+            </div>
+
+            <div class="tl-item">
+                <div class="tl-dot">4</div>
+
+                <div class="tl-label">
+                    Goals
+                    <small>Career targets</small>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sidebar-footer">
+            LearnHub Personalized E-Learning Recommender
+        </div>
+
+    </aside>
+
+    <div class="chat-col">
+
+        <div
+            class="chat-thread"
+            id="thread">
+
+            <div class="msg bot">
+
+                <div class="avatar">
+                    L
+                </div>
+
+                <div class="bubble">
+                    Welcome to LearnHub.
+                    Let's determine your learning profile.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="js/supabase.js"></script>
+
+<script src="js/assessment.js"></script>
+
+</body>
+
+</html>

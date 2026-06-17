@@ -1,0 +1,366 @@
+:root{
+    --bg:#0F1828;
+    --bg-2:#0B1220;
+    --surface:#18253F;
+    --surface-2:#20304F;
+    --border:rgba(255,255,255,0.09);
+
+    --text:#EDF1F7;
+    --text-muted:#8E9BB8;
+
+    --accent:#E3A857;
+
+    --accent-soft:
+        rgba(227,168,87,0.16);
+
+    --radius:14px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+
+    background:
+        radial-gradient(
+            circle at 15% 0%,
+            rgba(227,168,87,0.08),
+            transparent 45%
+        ),
+        var(--bg);
+
+    color:var(--text);
+
+    font-family:
+        Inter,
+        Arial,
+        sans-serif;
+
+}
+
+.app{
+    display:grid;
+
+    grid-template-columns:
+        260px 1fr;
+
+    min-height:100vh;
+}
+
+/* ======================
+   SIDEBAR
+====================== */
+
+.sidebar{
+
+    background:var(--bg-2);
+
+    border-right:
+        1px solid var(--border);
+
+    padding:32px 24px;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:24px;
+
+    user-select: none;
+    
+    -webkit-user-select: none
+}
+
+.brand{
+
+    font-size:28px;
+    font-weight:700;
+
+    letter-spacing:-0.5px;
+}
+
+.brand span{
+    color:var(--accent);
+}
+
+.timeline{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:20px;
+}
+
+.tl-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:12px;
+}
+
+.tl-dot{
+
+    width:22px;
+    height:22px;
+
+    border-radius:50%;
+
+    border:
+        1.5px solid
+        var(--accent);
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    color:var(--accent);
+
+    font-size:11px;
+}
+
+.tl-label{
+
+    font-size:14px;
+}
+
+.tl-label small{
+
+    display:block;
+
+    margin-top:3px;
+
+    color:
+        var(--text-muted);
+
+    font-size:11px;
+}
+
+.sidebar-footer{
+
+    margin-top:auto;
+
+    border-top:
+        1px solid
+        var(--border);
+
+    padding-top:16px;
+
+    color:
+        var(--text-muted);
+
+    font-size:12px;
+
+    line-height:1.5;
+}
+
+/* ======================
+   CHAT
+====================== */
+
+.chat-col{
+
+    display:flex;
+    flex-direction:column;
+}
+
+.chat-thread{
+
+    flex:1;
+
+    padding:
+        32px;
+
+    overflow-y:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+}
+
+/* ======================
+   MESSAGES
+====================== */
+
+.msg{
+
+    display:flex;
+
+    gap:10px;
+
+    max-width:80%;
+}
+
+.msg.bot{
+
+    align-self:flex-start;
+}
+
+.msg.user{
+
+    align-self:flex-end;
+
+    flex-direction:
+        row-reverse;
+}
+
+.avatar{
+
+    width:30px;
+    height:30px;
+
+    border-radius:50%;
+
+    background:
+        var(--surface-2);
+
+    color:
+        var(--accent);
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    flex-shrink:0;
+
+    user-select: none;
+    
+    -webkit-user-select: none
+}
+
+
+.bubble {
+    padding: 12px 16px;
+
+    border-radius: var(--radius);
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.msg.bot .bubble{
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid
+        var(--border);
+
+    border-top-left-radius:
+        4px;
+}
+
+.msg.user .bubble{
+
+    background:
+        var(--accent-soft);
+
+    border-top-right-radius:
+        4px;
+}
+
+/* ======================
+   OPTIONS
+====================== */
+
+.quick-replies{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-left:40px;
+}
+
+.qr-btn{
+
+    background:
+        var(--surface);
+
+    color:
+        var(--text);
+
+    border:
+        1px solid
+        var(--border);
+
+    padding:
+        10px 16px;
+
+    border-radius:
+        999px;
+
+    cursor:pointer;
+
+    transition:
+        0.2s ease;
+
+    user-select: none;
+
+    -webkit-user-select: none
+}
+
+.qr-btn:hover{
+
+    border-color:
+        var(--accent);
+
+    color:
+        var(--accent);
+}
+
+.qr-btn:disabled{
+
+    opacity:0.5;
+
+    cursor:not-allowed;
+}
+
+/* ======================
+   MOBILE
+====================== */
+
+@media(max-width:768px){
+
+    .app{
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .sidebar{
+
+        display:none;
+    }
+
+    .chat-thread{
+
+        padding:20px;
+    }
+
+    .msg{
+
+        max-width:100%;
+    }
+}

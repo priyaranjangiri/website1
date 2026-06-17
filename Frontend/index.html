@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub | Personalized E-Learning Content Recommender</title>
+
+    <link rel="stylesheet" href="web.css">
+</head>
+
+<body>
+
+    <div class="auth-container">
+
+        <div class="auth-card">
+
+            <div class="brand-section">
+                <h1>Learn<span>Hub</span></h1>
+                <p>Personalized E-Learning Content Recommender</p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="tab-container">
+                <button id="login-tab" class="tab-btn active">
+                    Login
+                </button>
+
+                <button id="register-tab" class="tab-btn">
+                    Register
+                </button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="login-form">
+
+                <div class="input-group">
+                    <label>
+                        Email
+                    </label>
+
+                    <input
+                        type="text"
+                        id="login-username"
+                        placeholder="Enter email"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+
+                    <input
+                        type="password"
+                        id="login-password"
+                        placeholder="Enter password"
+                        required
+                    >
+                </div>
+
+                <button
+                    type="submit"
+                    class="primary-btn"
+                >
+                    Login
+                </button>
+
+            </form>
+
+            <!-- Register Form -->
+            <form
+                id="register-form"
+                style="display:none;"
+            >
+
+                <div class="input-group">
+                    <label>Full Name</label>
+
+                    <input
+                        type="text"
+                        id="register-name"
+                        placeholder="Enter full name"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label>Username</label>
+
+                    <input
+                        type="text"
+                        id="register-username"
+                        placeholder="Choose username"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label>Email</label>
+
+                    <input
+                        type="email"
+                        id="register-email"
+                        placeholder="Enter email"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+
+                    <input
+                        type="password"
+                        id="register-password"
+                        placeholder="Create password"
+                        required
+                    >
+                </div>
+
+                <button
+                    type="submit"
+                    class="primary-btn"
+                >
+                    Register
+                </button>
+
+            </form>
+
+            <div id="message-box"></div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="js/supabase.js"></script>
+
+    <script src="js/login.js"></script>
+
+</body>
+</html>

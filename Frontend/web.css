@@ -1,0 +1,627 @@
+:root{
+    --bg:#0F1828;
+    --bg-2:#0B1220;
+    --surface:#18253F;
+    --surface-2:#20304F;
+    --border:rgba(255,255,255,0.09);
+
+    --text:#EDF1F7;
+    --text-muted:#8E9BB8;
+
+    --accent:#E3A857;
+
+    --accent-soft:rgba(227,168,87,0.16);
+
+    --radius:14px;
+}
+
+/* =========================
+   LOGIN PAGE
+========================= */
+
+body{
+    background:
+        radial-gradient(
+            circle at 15% 0%,
+            rgba(227,168,87,0.08),
+            transparent 45%
+        ),
+        var(--bg);
+
+    color:var(--text);
+}
+
+.auth-container{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+
+    background-size:cover;
+    background-position:center;
+}
+
+.auth-card{
+    width:450px;
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,0.35);
+}
+
+.brand-section{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.brand-section h1{
+    color:var(--text);
+
+    font-size:42px;
+
+    font-weight:700;
+
+    letter-spacing:-1px;
+}
+
+.brand-section h1 span{
+    color:var(--accent);
+}
+.brand-section p{
+    color:var(--text-muted);
+}
+
+.tab-container{
+    display:flex;
+    margin-bottom:25px;
+    gap:8px;
+}
+
+.tab-btn{
+    flex:1;
+
+    border:1px solid var(--border);
+
+    padding:12px;
+
+    cursor:pointer;
+
+    background:var(--surface-2);
+
+    color:var(--text-muted);
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.tab-btn.active{
+    background:var(--accent);
+
+    color:var(--bg);
+}
+
+.input-group{
+    margin-bottom:18px;
+}
+
+.input-group label{
+    display:block;
+
+    margin-bottom:6px;
+
+    color:var(--text);
+
+    font-weight:500;
+}
+
+.input-group input{
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid var(--border);
+
+    border-radius:10px;
+
+    background:var(--surface-2);
+
+    color:var(--text);
+
+    font-size:14px;
+}
+
+.input-group input::placeholder{
+    color:var(--text-muted);
+}
+
+.input-group input:focus{
+    outline:none;
+
+    border-color:var(--accent);
+}
+
+.primary-btn{
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:var(--accent);
+
+    color:var(--bg);
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    margin-top:10px;
+
+    transition:0.3s;
+}
+
+.primary-btn:hover{
+    opacity:0.9;
+}
+
+#message-box{
+    margin-top:15px;
+
+    text-align:center;
+
+    font-weight:500;
+
+    color:var(--accent);
+}
+/* =========================
+   ASSESSMENT PAGE
+========================= */
+
+.assessment-container{
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.assessment-header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.assessment-header h1{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.progress-wrapper{
+    width:100%;
+    height:12px;
+    background:#dbeafe;
+    border-radius:10px;
+    overflow:hidden;
+    margin-bottom:30px;
+}
+
+#progress-bar{
+    width:0%;
+    height:100%;
+    background:#2563eb;
+    transition:0.4s;
+}
+
+.chat-card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    min-height:450px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+#chat-window{
+    min-height:300px;
+    margin-bottom:20px;
+}
+
+.bot-message{
+    background:#eff6ff;
+    color:#1e3a8a;
+    padding:14px;
+    border-radius:12px;
+    margin-bottom:15px;
+    max-width:75%;
+}
+
+.user-message{
+    background:#2563eb;
+    color:white;
+    padding:14px;
+    border-radius:12px;
+    margin-bottom:15px;
+    margin-left:auto;
+    text-align:right;
+    max-width:75%;
+}
+
+#options-container{
+    display:grid;
+    gap:12px;
+}
+
+.option-btn{
+    border:none;
+    background:#f3f4f6;
+    padding:14px;
+    border-radius:12px;
+    cursor:pointer;
+    text-align:left;
+    transition:0.3s;
+}
+
+.option-btn:hover{
+    background:#2563eb;
+    color:white;
+}
+
+/* =========================
+DASHBOARD
+========================= */
+
+.dashboard-container{
+max-width:1300px;
+margin:auto;
+padding:30px;
+}
+
+/* ---------- NAVBAR ---------- */
+
+.dashboard-nav{
+
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:var(--bg-2);
+
+border:1px solid var(--border);
+
+padding:18px 25px;
+
+border-radius:15px;
+
+margin-bottom:25px;
+
+box-shadow:
+    0 5px 20px rgba(0,0,0,0.25);
+
+
+}
+
+.dashboard-nav .brand{
+
+
+font-size:28px;
+font-weight:700;
+
+color:rgb(255, 255, 255);
+
+
+}
+
+.dashboard-nav .brand span{
+
+
+color:var(--accent);
+
+
+}
+
+.dashboard-nav button{
+
+
+border:none;
+
+background:#ff0000;
+
+color:white;
+
+padding:10px 16px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+font-weight:600;
+
+
+}
+
+.dashboard-nav button:hover{
+
+
+background:#b91c1c;
+
+
+}
+
+/* ---------- HEADER ---------- */
+
+.dashboard-header{
+
+
+margin-bottom:35px;
+
+
+}
+
+.dashboard-header h1{
+
+
+color:white;
+
+margin-bottom:8px;
+
+
+}
+
+.dashboard-header p{
+
+
+color:var(--text-muted);
+
+
+}
+
+/* ---------- SECTIONS ---------- */
+
+.dashboard-section{
+
+
+background:var(--surface);
+
+border:1px solid var(--border);
+
+padding:25px;
+
+border-radius:18px;
+
+margin-bottom:25px;
+
+box-shadow:
+    0 5px 20px rgba(0,0,0,0.15);
+
+
+}
+
+.dashboard-section h2{
+
+
+color:var(--accent);
+
+font-size:22px;
+
+margin-bottom:20px;
+
+font-weight:700;
+
+
+}
+
+/* ---------- SUMMARY CARDS ---------- */
+
+.summary-card{
+
+
+background:var(--surface-2);
+
+border:1px solid var(--border);
+
+color:rgb(252, 252, 252);
+
+
+}
+
+.summary-card h3{
+
+
+color:var(--text-muted);
+
+
+}
+
+.summary-card p{
+
+
+color:var(--accent);
+
+font-size:28px;
+
+font-weight:700;
+
+
+}
+
+
+/* =========================
+   SUMMARY CARDS
+========================= */
+
+.summary-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.summary-card{
+    background:#000000;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.summary-card h3{
+    margin-bottom:10px;
+    color:#64748b;
+}
+
+.summary-card p{
+    font-size:24px;
+    font-weight:bold;
+    color:#003bb9;
+}
+
+/* =========================
+   LEARNING PATH
+========================= */
+
+.path-container{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.path-step{
+    padding:12px 20px;
+    border-radius:999px;
+    font-weight:600;
+}
+
+.completed{
+    background:#dcfce7;
+    color:#166534;
+}
+
+.current{
+    background:#dbeafe;
+    color:#1d4ed8;
+}
+
+.upcoming{
+    background:#e5e7eb;
+    color:#4b5563;
+}
+
+/* =========================
+   COURSE GRID
+========================= */
+
+.course-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+}
+
+.course-card{
+    background:#002c58;
+    border-radius:15px;
+    padding:20px;
+    transition:0.3s;
+    border:1px solid #e5e7eb;
+}
+
+.course-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.08);
+}
+
+.course-card h3{
+    color:#ffffff;
+}
+
+.course-card p{
+    color:#fdfdfd;
+}
+
+.course-card strong{
+    color:#ffffff;
+}
+
+.course-btn{
+
+    display:inline-block;
+
+    margin-top:12px;
+
+    padding:10px 16px;
+
+    background:var(--accent);
+
+    color:#000000;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    border-radius:8px;
+
+    transition:0.3s;
+}
+
+.course-btn:hover{
+
+    opacity:0.9;
+
+    transform:translateY(-2px);
+}
+
+/* =========================
+   REASON LIST
+========================= */
+
+.reason-list{
+    padding-left:20px;
+}
+
+.reason-list li{
+    margin-bottom:12px;
+    line-height:1.5;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .auth-card{
+        width:100%;
+    }
+
+    .dashboard-container{
+        padding:15px;
+    }
+
+    .dashboard-nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .path-container{
+        flex-direction:column;
+    }
+
+    .bot-message,
+    .user-message{
+        max-width:100%;
+    }
+}

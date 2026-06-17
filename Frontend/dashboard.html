@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>LearnHub Dashboard</title>
+
+    <link rel="stylesheet" href="web.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <nav class="dashboard-nav">
+
+        <div class="brand">
+            Learn<span>Hub</span>
+        </div>
+
+        <button onclick="logout()">
+            Logout
+        </button>
+
+    </nav>
+
+    <header class="dashboard-header">
+
+        <h1 id="welcome-message">
+            Welcome
+        </h1>
+
+        <p>
+            Personalized E-Learning Content Recommender
+        </p>
+
+    </header>
+
+    <!-- Learner Summary -->
+
+    <section class="dashboard-section">
+
+        <h2>Your Assessment Summary</h2>
+
+        <div class="summary-grid">
+
+            <div class="summary-card">
+                <h3>Quiz Score</h3>
+
+                <p id="score-card">
+                    -
+                </p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Completion Time</h3>
+
+                <p id="time-card">
+                    -
+                </p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Learning Style</h3>
+
+                <p id="style-card">
+                    -
+                </p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Target Level</h3>
+
+                <p id="target-card">
+                    -
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Learning Path -->
+
+    <section class="dashboard-section">
+
+        <h2>Recommended Learning Path</h2>
+
+        <div class="path-container">
+
+            <div class="path-step completed">
+                Assessment Completed
+            </div>
+
+            <div class="path-step current">
+                React Basics
+            </div>
+
+            <div class="path-step upcoming">
+                Web Applications for Everybody
+            </div>
+
+            <div class="path-step upcoming">
+                Introduction to Web Development
+            </div>
+
+            <div class="path-step upcoming">
+                IBM Front-End Developer
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Recommendations -->
+
+    <section class="dashboard-section">
+
+        <h2>
+            Recommended Courses for
+            .NET FullStack Developer
+        </h2>
+
+        <div
+            id="course-grid"
+            class="course-grid">
+        </div>
+
+    </section>
+
+    <!-- Recommendation Reason -->
+
+    <section class="dashboard-section">
+
+        <h2>
+            Why These Recommendations?
+        </h2>
+
+        <ul class="reason-list">
+
+            <li>
+                Matches your assessment score
+            </li>
+
+            <li>
+                Aligns with your learning preferences
+            </li>
+
+            <li>
+                Recommended by learners with
+                similar profiles
+            </li>
+
+            <li>
+                Fits your target skill level
+            </li>
+
+            <li>
+                Generated using collaborative
+                filtering and content-based
+                filtering
+            </li>
+
+        </ul>
+
+    </section>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="js/supabase.js"></script>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
