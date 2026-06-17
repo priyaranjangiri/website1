@@ -366,4 +366,21 @@ async function finishAssessment() {
         "dashboard.html";
 }
 
+
+const existingAssessment =
+    localStorage.getItem(
+        "learnerProfile"
+    );
+
+if(existingAssessment){
+
+    document
+        .getElementById(
+            "backButton"
+        )
+        .style.display =
+            "block";
+}
+
+
 showQuestion();

@@ -58,7 +58,7 @@ body{
     backdrop-filter:blur(10px);
 
     box-shadow:
-        0 20px 40px rgba(0,0,0,0.35);
+        0 20px 40px rgb(0, 238, 255);
 }
 
 .brand-section{
@@ -233,7 +233,7 @@ body{
     border-radius:20px;
     padding:25px;
     min-height:450px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    box-shadow:0 10px 25px rgb(0, 255, 255);
 }
 
 #chat-window{
@@ -311,7 +311,7 @@ border-radius:15px;
 margin-bottom:25px;
 
 box-shadow:
-    0 5px 20px rgba(0,0,0,0.25);
+    0 5px 20px rgb(0, 217, 255);
 
 
 }
@@ -407,7 +407,7 @@ border-radius:18px;
 margin-bottom:25px;
 
 box-shadow:
-    0 5px 20px rgba(0,0,0,0.15);
+    0 5px 20px rgb(0, 223, 252);
 
 
 }
@@ -557,7 +557,7 @@ font-weight:700;
 
 .course-card:hover{
     transform:translateY(-5px);
-    box-shadow:0 10px 20px rgba(0,0,0,0.08);
+    box-shadow:0 10px 20px rgb(0, 238, 255);
 }
 
 .course-card h3{
