@@ -65,7 +65,7 @@ profile.targetLevel ??
 ========================= */
 
 fetch(
-    "https://website1-cdd1.onrender.com",
+    "https://website1-cdd1.onrender.com/recommend",
     {
 
         method:"POST",
