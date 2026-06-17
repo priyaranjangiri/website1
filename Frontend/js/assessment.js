@@ -133,9 +133,18 @@ function addBotMessage(text){
         "msg bot";
 
     msg.innerHTML = `
-        <div class="avatar">L</div>
-        <div class="bubble">${text}</div>
+        <div class="avatar">
+            <img
+                src="assets/logo.svg"
+                alt="LearnHub"
+            >
+        </div>
+
+        <div class="bubble">
+            ${text}
+        </div>
     `;
+
 
     thread.appendChild(msg);
 

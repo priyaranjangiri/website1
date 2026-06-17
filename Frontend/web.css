@@ -493,6 +493,22 @@ font-weight:700;
    LEARNING PATH
 ========================= */
 
+.path-step.completed{
+
+    cursor:pointer;
+
+    border:none;
+
+    transition:0.2s ease;
+}
+
+.path-step.completed:hover{
+
+    transform:translateY(-2px);
+
+    opacity:0.9;
+}
+
 .path-container{
     display:flex;
     gap:15px;
